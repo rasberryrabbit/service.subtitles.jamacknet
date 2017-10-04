@@ -43,3 +43,21 @@ class MyClass(xbmcgui.WindowDialog):
     # the window will be closed with any key
 self.close()
 
+
+#--------------------------------------------
+
+def parse_proxy_servers2():
+    proxy_list_url = "http://www.httptunnel.ge/ProxyListForFree.aspx"
+    pattern = "<a\s+[^>]+>(\d+\.\d+\.\d+\.\d+\:\d+)</a>"
+    proxy_list = []
+    try:
+        resp = urllib.urlopen(proxy_list_url)
+        content = resp.read()
+        iplist = re.findall(pattern, content)
+        for ip1 in iplist:
+            proxy_list.append(ip1)
+    except:
+        pass
+    return proxy_list
+
+
