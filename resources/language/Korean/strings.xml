@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+    <string id="30001">최대 로딩 페이지</string>
+    <string id="30002">최대 로딩 파일</string>
+    <string id="30003">파일 이름 대신 제목 사용</string>
+    <string id="30004">User-Agent</string>        
+    <string id="30005">영타를 한글로 변환 사용</string>
+    <string id="30006">시즌/에피소드를 비교</string>
+    <string id="30007">영문->한글 사전 사용</string>
+    <string id="30008">영문->한글 사전 파일</string>
+</strings>
